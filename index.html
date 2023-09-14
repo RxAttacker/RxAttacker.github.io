@@ -1,15 +1,88 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>rx portfolio</title>
-    </head>
+<head> 
+    <title>RxAttacker's portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Uni+Sans+Heavy&display=swap">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
 
-    <body> 
-        <h1>Hello!</h1> 
+        .squircle-container {
+            
+        }
 
-        <p>ZAMN I AM THE BEST</p>
-        
-    </body>
+        .squircle {
+            width: 415px;
+            height: 400px;
+            background-color: #3aa3ff;
+            text-align: center;
+            border-radius: 25px;
+            padding: 32px;
+            animation: slideFromTop .5s ease-in-out;
+            position: relative;
+        }
 
+        h1 {
+            font-size: 50px;
+            font-family: 'Uni Sans Heavy', sans-serif;
+            color: #000000;
+            margin: 0;
+        }
 
+        p {
+            font-size: 40px;
+            font-family: 'Uni Sans Heavy', sans-serif;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
+        img {
+            position: fixed;
+            top: 2px;
+            left: 2px;
+            width: 64px;
+            height: auto;
+        }
+
+        .bottom-left-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 18px;
+            font-family: 'Uni Sans Heavy', sans-serif;
+            color: #000000;
+        }
+
+        @keyframes slideFromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="squircle-container">
+    <div class="squircle">
+        <h1>This is <span style="font-size: 65px;">MY</span> website</h1>
+        <p>My name is Daniel (RxAttacker) and I am a self-proclaimed full stack developer.</p>
+    </div>
+</div>
+
+<img src="rx.jpg" alt="Rx Image">
+
+<div class="bottom-left-text">Work in Progress</div>
+
+</body>
 </html>
