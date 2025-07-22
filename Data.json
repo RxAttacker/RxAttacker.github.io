@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Stardust",
+    "image": "https://cdn.discordapp.com/attachments/1386849104855961783/1396934837654392925/image.png?ex=687fe473&is=687e92f3&hm=3ed54c55f7370879226ad2311bb093bffc3d521ec636c42350319cc1a6a3e1cf&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "5",
+      "Shiny": "50",
+      "Rainbow": "650",
+      "Void": "4,500"
+    },
+    "trend": "4.5/5"
+  },
+  {
+    "name": "Fire Empyrean",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396945050444759111/image.png?ex=687fedf6&is=687e9c76&hm=3cc47aa040b16e55716f8fd3a71e238d92fc47c46f752a0a3fc214c6ec338dea&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "3",
+      "Shiny": "25",
+      "Rainbow": "500",
+      "Void": "3,500"
+    },
+    "trend": "3.5/5"
+  },
+  {
+     "name": "Blitzshade",
+    "image": "https://cdn.discordapp.com/attachments/1389502233485512768/1396947553982877906/Screenshot_20250721_230941_Roblox.jpg?ex=687ff04a&is=687e9eca&hm=095197e30bf80c15f89c0ee0bcaa8e2e77220e898547e24ca2492dc43b1f9c60&",
+    "cost": {
+      "Normal": "475",
+      "Golden": "5,750",
+      "Shiny": "23,500",
+      "Rainbow": "100k+",
+      "Void": "N/A"
+    },
+    "trend": "5/5"
+  },
+  {
+     "name": "Ice Goddess",
+    "image": "https://cdn.discordapp.com/attachments/1386849104855961783/1396972912803840040/image.png?ex=688007e8&is=687eb668&hm=4a5d9a49028aeaedee24e2be3107d3a5ef4c7e7ca15f981f0d4922b8591ccadc&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "25",
+      "Void": "130"
+    },
+    "trend": "3/5"    
+  },
+  {
+     "name": "Max Lvl. Lumina",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396980318929555667/image.png?ex=68800ece&is=687ebd4e&hm=8891e00d26d590ec3ff702c076faa1b2e9854b580d738b29d9f79c4817a6a684&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "200",
+      "Void": "645"
+    },
+    "trend": "2/5"
+  },
+  {
+     "name": "Lady Liberty",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396980880043540590/image.png?ex=68800f54&is=687ebdd4&hm=585faec531feb2e59c3be5013ef7c76c9479d589d4b039009027c3a732e5f612&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "8",
+      "Void": "80"
+    },
+    "trend": "0.5/5"
+  },
+    {
+     "name": "High LvL. Mermaid Majesty",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396981969501556866/image.png?ex=68801058&is=687ebed8&hm=aa0584953adf685073f9dc218baf4a92c40ba9c8335f3020991867ff1a097a66&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "245",
+      "Void": "750"
+    },
+    "trend": "1.5/5"
+  },
+    {
+     "name": "High LvL. Summer Wrath",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984056721182850/image.png?ex=68801249&is=687ec0c9&hm=ad582f373761591b1985d32d577de4f859dec2a419bf95b19d9cc3d6ad64b0b6&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "300",
+      "Void": "850"
+    },
+    "trend": "2/5"
+  },
+     {
+     "name": "Azure Skull",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396983027099500564/image.png?ex=68801154&is=687ebfd4&hm=23c1ecf7d7cd6a814e559feac0b903357edffa41345deef765c6f4bdea978a56&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "20",
+      "Void": "125"
+    },
+    "trend": "0.5/5"
+  },
+       {
+     "name": "Amethyst Overlord",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
+    "cost": {
+      "Normal": "225",
+      "Golden": "2,500",
+      "Shiny": "12,00",
+      "Rainbow": "38,000",
+      "Void": "700k+"
+    },
+    "trend": "3.5/5"
+  },
+       {
+     "name": "Glimmerwing",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1397017792317886646/image.png?ex=688031b5&is=687ee035&hm=5ab30b0724c19c8fd2936fbe3024c7d62c10bc95bd02c0ab93dd62355e105153&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "5",
+      "Rainbow": "45",
+      "Void": "175"
+    },
+    "trend": "3/5"
+  },
+    {
+     "name": "Celestial Shard",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1397019140681764947/image.png?ex=688032f6&is=687ee176&hm=0b882345eb2dcd2c68b2c7277d445225fab331029945bd40bb26a7f47bda4605&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "15",
+      "Rainbow": "350",
+      "Void": "2,500"
+    },
+    "trend": "2.5/5"
+  }
+]
+
