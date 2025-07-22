@@ -1,60 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saber Simulator Value List</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="main"></div>
-
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="https://rxattacker.github.io/contact" class="nav-link">Contact Me</a>
-        <a href="https://rxattacker.github.io" class="nav-link">Value List</a>
-        <a href="#" class="nav-link">Element Calculator</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="main-content">
-    <h2>Saber Simulator Value List</h2>
-    <div class="ad-banner">
-      <img src="https://cdn.discordapp.com/attachments/1390259652251615364/1397072377405243423/Index.png?ex=6880648b&is=687f130b&hm=80ce2d8e8ad382f17a5edd008f66e297304ca93ada0f55f67d85a4f6dfecac91&" alt="Ad Banner" style="width: 100%; max-width: 400px; border-radius: 10px; display: block; margin: 0 auto 10px;">
-      <p style="text-align: center;"><a href="https://discord.gg/5gQPDsZfgV" target="_blank">Join today!</a></p>
-      <p style="text-align: center;">Want Ad space? <a href="https://rxattacker.github.io/contact">Contact Me</a></p>
-    </div>
-    <div class="grid" id="grid"></div>
-  </main>
-
-  <script>
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        const grid = document.getElementById('grid');
-        data.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          const trendClass = item.trend === '⬆' ? 'trend-up' : 'trend-down';
-          card.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" />
-            <h3>${item.name}</h3>
-            <div class="costs">
-                <p>🌙 Normal: ${item.cost.Normal}</p>
-                <p>⚜️ Golden: ${item.cost.Golden}</p>
-                <p>✨ Shiny: ${item.cost.Shiny}</p>
-                <p>🌈 Rainbow: ${item.cost.Rainbow}</p>
-                <p>🌌 Void: ${item.cost.Void}</p>   
-            </div>
-            <p class="${trendClass}">Trend: ${item.trend}</p>
-          `;
-          grid.appendChild(card);
-        });
-      })
-      .catch(err => console.error('Failed to load data:', err));
-  </script>
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=https://rxattacker.github.io/valuelist" />
+  </head>
+  <body>
+  </body>
 </html>
