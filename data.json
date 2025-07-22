@@ -48,14 +48,14 @@
     "trend": "3/5"    
   },
   {
-     "name": "Max Lvl. Lumina",
+     "name": "Lvl 90+ Lumina",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396980318929555667/image.png?ex=68800ece&is=687ebd4e&hm=8891e00d26d590ec3ff702c076faa1b2e9854b580d738b29d9f79c4817a6a684&",
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "200",
-      "Void": "645"
+      "Rainbow": "145",
+      "Void": "575"
     },
     "trend": "2/5"
   },
