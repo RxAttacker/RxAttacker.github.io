@@ -1,0 +1,545 @@
+/* Base and layout */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #000000, #0c0c25, #1a1a40);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 70px;
+  color: white;
+}
+
+.main-content {
+  padding: 33px;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  pointer-events: none;
+  background: transparent;
+  animation: zoom 16s alternate infinite;
+  box-shadow:
+-3.79vw -95.29vh 0.13px 0.99px #fff,
+21.71vw -53.70vh 0.85px 0.00px #fff,
+90.88vw -16.87vh 0.06px 0.30px #fff,
+-81.27vw -50.45vh 0.16px 0.70px #fff,
+51.26vw -84.62vh 0.52px 0.92px #fff,
+-30.30vw 84.66vh 0.71px 0.75px #fff,
+77.32vw 6.31vh 0.23px 0.58px #fff,
+31.64vw 88.62vh 0.39px 0.79px #fff,
+15.23vw -41.82vh 0.48px 0.09px #fff,
+-90.56vw -86.86vh 0.37px 0.26px #fff,
+20.27vw 44.53vh 0.32px 0.39px #fff,
+45.05vw 20.31vh 0.54px 0.99px #fff,
+99.38vw -83.56vh 0.91px 0.82px #fff,
+15.94vw -28.01vh 0.35px 0.98px #fff,
+-95.85vw 70.47vh 0.20px 0.83px #fff,
+-38.19vw 93.38vh 0.66px 0.46px #fff,
+-27.51vw -51.62vh 0.74px 0.70px #fff,
+-94.67vw 68.42vh 0.68px 0.11px #fff,
+72.42vw 40.91vh 0.38px 0.98px #fff,
+15.94vw -51.14vh 0.21px 0.16px #fff,
+-88.05vw -80.80vh 0.71px 0.28px #fff,
+54.44vw -38.22vh 0.41px 0.25px #fff,
+-78.40vw 4.98vh 0.11px 0.72px #fff,
+54.52vw 6.42vh 0.01px 0.59px #fff,
+9.92vw -88.51vh 0.79px 0.95px #fff,
+12.23vw -77.46vh 0.06px 0.54px #fff,
+-74.54vw 68.59vh 0.60px 0.80px #fff,
+27.76vw 59.30vh 0.07px 0.57px #fff,
+85.85vw -2.59vh 0.93px 0.39px #fff,
+34.95vw -35.63vh 0.89px 0.68px #fff,
+29.27vw -23.96vh 0.21px 0.38px #fff,
+89.34vw 44.43vh 0.27px 0.30px #fff,
+82.40vw 19.42vh 0.86px 0.81px #fff,
+81.66vw 37.69vh 0.45px 0.30px #fff,
+-87.17vw -41.46vh 0.03px 0.22px #fff,
+-53.83vw 23.84vh 0.03px 0.50px #fff,
+-43.88vw 84.58vh 0.13px 0.61px #fff,
+-66.33vw 66.97vh 0.02px 0.81px #fff,
+-92.31vw 35.18vh 0.03px 0.47px #fff,
+4.38vw 47.12vh 0.81px 0.77px #fff,
+-96.27vw 63.21vh 0.19px 0.20px #fff,
+50.03vw 60.25vh 0.61px 0.97px #fff,
+0.52vw -70.53vh 0.59px 0.34px #fff,
+-37.08vw -47.31vh 0.54px 0.47px #fff,
+21.60vw 62.35vh 0.14px 0.01px #fff,
+17.58vw 38.22vh 0.32px 0.21px #fff,
+35.14vw -57.26vh 0.44px 0.09px #fff,
+0.99vw -76.84vh 0.08px 0.58px #fff,
+-55.47vw -58.80vh 0.31px 0.95px #fff,
+-57.98vw 64.45vh 0.73px 0.84px #fff,
+-37.79vw 15.41vh 0.25px 0.70px #fff,
+30.47vw -30.31vh 0.78px 0.10px #fff,
+-15.58vw -80.68vh 0.64px 0.86px #fff,
+80.38vw 34.65vh 0.92px 0.04px #fff,
+18.90vw 14.51vh 0.37px 0.85px #fff,
+-54.56vw -85.23vh 0.48px 0.62px #fff,
+-78.15vw -88.17vh 0.87px 0.83px #fff,
+91.71vw 28.47vh 0.18px 0.94px #fff,
+18.23vw 49.64vh 0.75px 0.64px #fff,
+7.44vw 32.20vh 0.48px 0.77px #fff,
+92.33vw 30.03vh 0.83px 0.24px #fff,
+17.60vw -43.87vh 0.98px 0.93px #fff,
+77.07vw 25.34vh 0.58px 0.70px #fff,
+63.90vw -11.76vh 0.74px 0.41px #fff,
+-81.03vw -0.43vh 0.90px 0.58px #fff,
+18.33vw -99.71vh 0.45px 0.96px #fff,
+34.20vw -50.59vh 0.84px 0.21px #fff,
+6.79vw 62.91vh 0.37px 0.73px #fff,
+-79.81vw -94.20vh 0.90px 0.23px #fff,
+21.22vw -68.24vh 0.49px 0.75px #fff,
+-97.85vw 79.21vh 0.20px 0.82px #fff,
+81.07vw -96.13vh 0.11px 0.70px #fff,
+14.03vw 85.69vh 0.61px 0.89px #fff,
+-48.11vw -49.96vh 0.19px 0.68px #fff,
+53.46vw -40.64vh 0.25px 0.04px #fff,
+-57.40vw -59.59vh 0.51px 0.56px #fff,
+96.80vw 22.08vh 0.11px 0.27px #fff,
+-24.09vw -73.96vh 0.29px 0.80px #fff,
+-91.26vw -33.89vh 0.59px 0.09px #fff,
+14.05vw 95.12vh 0.36px 0.04px #fff,
+50.22vw 22.56vh 0.03px 0.25px #fff,
+19.66vw -55.17vh 0.06px 0.03px #fff,
+85.13vw -45.45vh 0.27px 0.17px #fff,
+55.66vw 38.68vh 0.07px 0.04px #fff,
+56.18vw 4.96vh 0.52px 0.23px #fff,
+64.62vw 64.80vh 0.27px 0.80px #fff,
+-22.82vw -54.46vh 0.85px 0.69px #fff,
+60.76vw -4.26vh 0.46px 0.67px #fff,
+23.07vw -33.10vh 0.88px 0.25px #fff,
+-94.52vw 32.98vh 0.68px 0.29px #fff,
+96.96vw -81.54vh 0.15px 0.88px #fff,
+-33.71vw 46.07vh 0.79px 0.20px #fff,
+21.41vw 40.87vh 0.08px 0.95px #fff,
+-90.70vw -8.30vh 0.38px 0.99px #fff,
+-80.39vw 50.35vh 0.72px 0.27px #fff,
+84.88vw -59.23vh 0.82px 0.67px #fff,
+34.90vw -35.22vh 0.16px 0.70px #fff,
+-52.88vw -57.03vh 0.67px 0.34px #fff,
+17.91vw 97.75vh 0.56px 0.33px #fff,
+93.57vw 20.38vh 0.38px 0.73px #fff,
+18.29vw -31.08vh 0.38px 0.75px #fff,
+90.25vw -84.93vh 0.07px 0.55px #fff,
+-22.90vw -85.29vh 0.15px 0.74px #fff,
+-24.36vw -16.31vh 0.78px 0.18px #fff,
+64.88vw -38.61vh 0.73px 0.58px #fff,
+-83.97vw -51.55vh 0.13px 0.83px #fff,
+-39.75vw 47.98vh 0.31px 0.98px #fff,
+24.96vw 25.10vh 0.48px 0.63px #fff,
+-92.19vw -69.66vh 0.74px 0.99px #fff,
+-16.12vw -0.52vh 0.42px 0.57px #fff,
+42.44vw -26.44vh 0.12px 0.09px #fff,
+48.19vw -72.00vh 0.68px 0.97px #fff,
+98.07vw -49.33vh 0.30px 0.06px #fff,
+50.81vw -13.15vh 0.19px 0.70px #fff,
+8.98vw -18.99vh 0.02px 0.81px #fff,
+-81.44vw -82.70vh 0.96px 0.71px #fff,
+-85.70vw -95.95vh 0.84px 0.68px #fff,
+49.48vw -10.79vh 0.42px 0.61px #fff,
+96.17vw -40.50vh 0.33px 0.14px #fff,
+39.77vw 35.66vh 0.71px 0.57px #fff,
+-92.13vw 59.18vh 0.83px 0.92px #fff,
+-77.35vw -19.90vh 0.42px 0.80px #fff,
+-34.40vw 32.74vh 0.27px 0.65px #fff,
+64.75vw -60.71vh 0.34px 0.25px #fff,
+41.76vw 24.87vh 0.46px 0.37px #fff,
+-78.76vw 41.91vh 0.09px 0.03px #fff,
+-33.80vw 46.04vh 0.11px 0.77px #fff,
+-34.67vw 27.66vh 0.11px 0.82px #fff,
+-2.68vw -51.52vh 0.17px 0.17px #fff,
+46.48vw -12.74vh 0.50px 0.77px #fff,
+52.21vw 69.44vh 0.38px 0.95px #fff,
+-6.60vw 76.87vh 0.50px 0.58px #fff,
+87.25vw -74.45vh 0.89px 0.87px #fff,
+-43.30vw 16.57vh 0.27px 0.07px #fff,
+-91.32vw 13.48vh 0.99px 0.85px #fff,
+-77.81vw -32.25vh 0.85px 0.74px #fff,
+-37.93vw -85.90vh 0.80px 0.83px #fff,
+94.56vw 36.11vh 0.84px 0.95px #fff,
+58.00vw 95.62vh 0.63px 0.53px #fff,
+22.26vw -65.07vh 0.16px 0.07px #fff,
+78.58vw 46.73vh 0.70px 0.12px #fff,
+-33.22vw -53.53vh 0.43px 0.75px #fff,
+3.13vw 41.21vh 0.51px 0.11px #fff,
+0.77vw -70.24vh 0.34px 0.96px #fff,
+96.98vw -81.11vh 0.67px 0.63px #fff,
+35.88vw -48.82vh 0.71px 0.80px #fff,
+-14.56vw 21.59vh 0.20px 0.77px #fff,
+-13.54vw 96.07vh 0.38px 0.08px #fff,
+-77.77vw -6.38vh 0.72px 0.72px #fff,
+-92.37vw -3.70vh 0.00px 0.30px #fff,
+-40.48vw -0.88vh 0.55px 0.51px #fff,
+-51.01vw -38.80vh 0.51px 0.30px #fff,
+-49.40vw 80.06vh 0.49px 0.64px #fff,
+9.05vw 69.90vh 0.25px 0.26px #fff,
+-62.20vw 36.47vh 0.29px 0.08px #fff,
+-27.76vw 27.57vh 0.63px 0.06px #fff,
+88.82vw 65.78vh 0.03px 0.29px #fff,
+53.37vw -70.99vh 0.06px 0.58px #fff,
+35.39vw -50.47vh 0.29px 0.58px #fff,
+-39.13vw -8.21vh 0.37px 0.62px #fff,
+-72.86vw -48.96vh 0.34px 0.83px #fff,
+72.36vw -89.19vh 0.66px 0.26px #fff,
+55.33vw 41.23vh 0.63px 0.04px #fff,
+-12.38vw 27.65vh 0.56px 0.21px #fff,
+-14.97vw -48.58vh 0.79px 0.12px #fff,
+-29.81vw 90.64vh 0.10px 0.45px #fff,
+-61.07vw 14.32vh 0.76px 0.65px #fff,
+13.55vw -37.96vh 0.75px 0.48px #fff,
+-9.29vw -79.59vh 0.59px 0.38px #fff,
+35.23vw -64.71vh 0.99px 0.76px #fff,
+58.81vw -2.25vh 0.79px 0.32px #fff,
+12.90vw 93.46vh 0.38px 0.23px #fff,
+-95.70vw 73.91vh 0.23px 0.07px #fff,
+59.79vw -89.40vh 0.84px 0.09px #fff,
+-32.59vw -70.22vh 0.88px 0.38px #fff,
+-21.60vw 8.72vh 0.83px 0.69px #fff,
+52.59vw -52.93vh 0.61px 0.20px #fff,
+39.52vw -18.67vh 0.67px 0.64px #fff,
+-20.21vw -71.90vh 0.02px 0.97px #fff,
+47.77vw 67.81vh 0.82px 0.23px #fff,
+-35.06vw -71.74vh 0.87px 0.93px #fff,
+87.48vw 27.28vh 0.34px 0.23px #fff,
+-16.20vw 23.78vh 0.69px 0.63px #fff,
+-42.73vw 22.65vh 0.92px 0.57px #fff,
+36.53vw -51.44vh 0.47px 0.95px #fff,
+-16.88vw 32.83vh 0.49px 0.57px #fff,
+76.28vw 0.59vh 0.13px 0.95px #fff,
+-0.03vw -99.02vh 0.17px 0.44px #fff,
+-44.96vw 30.24vh 0.69px 0.55px #fff,
+94.12vw -22.74vh 0.79px 0.03px #fff,
+19.35vw 65.10vh 0.44px 0.07px #fff,
+74.15vw 29.79vh 0.64px 0.67px #fff,
+37.34vw 33.80vh 0.71px 0.45px #fff,
+37.84vw 68.11vh 0.25px 0.89px #fff,
+-93.26vw 97.62vh 0.80px 0.73px #fff,
+-72.43vw 96.43vh 0.02px 0.79px #fff,
+-47.91vw 53.42vh 0.17px 0.05px #fff,
+95.60vw 79.05vh 0.49px 0.91px #fff,
+-60.59vw 32.01vh 0.68px 0.93px #fff,
+96.03vw 66.28vh 0.67px 0.74px #fff,
+16.82vw -46.01vh 0.32px 0.92px #fff,
+-36.25vw -69.19vh 0.23px 0.74px #fff,
+5.36vw -97.77vh 0.35px 0.39px #fff,
+60.88vw -71.83vh 0.04px 0.17px #fff,
+-9.81vw -18.31vh 0.01px 0.21px #fff,
+38.96vw -77.25vh 0.10px 0.22px #fff,
+-37.57vw -81.73vh 0.50px 0.17px #fff,
+-28.34vw 35.15vh 0.95px 0.49px #fff,
+82.37vw -8.47vh 0.62px 0.26px #fff,
+6.08vw -97.61vh 0.75px 0.73px #fff,
+-83.90vw -31.66vh 0.80px 0.46px #fff,
+63.87vw 31.76vh 0.74px 0.65px #fff,
+-30.38vw -53.89vh 1.00px 0.40px #fff,
+-33.32vw -8.81vh 0.43px 0.11px #fff,
+38.48vw -44.90vh 0.02px 0.88px #fff,
+-91.91vw 48.86vh 0.15px 1.00px #fff,
+71.26vw 46.16vh 0.44px 0.11px #fff,
+98.41vw -0.19vh 0.41px 0.97px #fff,
+85.12vw -17.58vh 0.22px 0.15px #fff,
+-49.89vw -51.77vh 0.34px 0.69px #fff,
+-4.60vw -85.10vh 0.53px 0.18px #fff,
+-64.29vw -6.77vh 0.84px 0.07px #fff,
+15.97vw 3.86vh 0.23px 0.11px #fff,
+-9.60vw -67.56vh 0.58px 0.90px #fff,
+15.52vw 47.11vh 0.43px 0.28px #fff,
+-35.29vw -17.84vh 0.62px 0.78px #fff,
+45.70vw -53.56vh 0.82px 0.39px #fff,
+-1.82vw -24.56vh 0.32px 0.62px #fff,
+5.93vw 76.06vh 0.18px 0.46px #fff,
+-87.25vw -21.34vh 0.26px 0.04px #fff,
+-97.92vw -96.93vh 0.38px 0.32px #fff,
+65.51vw 31.33vh 0.36px 0.58px #fff,
+-66.82vw 55.28vh 0.56px 0.27px #fff,
+-84.08vw -89.13vh 0.75px 0.77px #fff,
+46.79vw 22.91vh 0.08px 0.43px #fff,
+-91.51vw -4.13vh 1.00px 0.25px #fff,
+-45.96vw -46.03vh 0.33px 0.85px #fff,
+-97.30vw -84.18vh 0.54px 0.95px #fff,
+61.70vw -51.46vh 0.98px 0.49px #fff,
+-37.30vw -42.88vh 0.75px 0.84px #fff,
+83.41vw 67.03vh 0.72px 0.06px #fff,
+67.18vw 58.30vh 0.91px 0.04px #fff,
+-82.59vw 88.02vh 0.27px 0.02px #fff,
+64.32vw 60.56vh 0.03px 0.09px #fff,
+-73.06vw -88.43vh 0.42px 0.43px #fff,
+65.51vw -99.54vh 0.56px 0.47px #fff,
+-42.92vw -51.51vh 0.45px 0.69px #fff,
+-96.72vw -89.13vh 0.50px 0.44px #fff,
+-25.49vw -48.59vh 0.05px 0.01px #fff,
+-82.92vw 40.93vh 0.87px 0.98px #fff,
+-53.18vw 19.48vh 0.81px 0.30px #fff,
+11.08vw -41.01vh 0.24px 0.82px #fff,
+11.39vw -98.10vh 1.00px 0.68px #fff,
+85.09vw -95.08vh 0.20px 0.27px #fff,
+80.74vw -15.59vh 0.44px 0.79px #fff,
+-31.07vw -54.95vh 0.32px 0.24px #fff,
+-56.41vw -10.00vh 0.92px 0.68px #fff,
+46.74vw -93.47vh 0.59px 0.82px #fff,
+51.74vw 22.54vh 0.09px 0.71px #fff,
+45.00vw 77.38vh 0.70px 0.31px #fff,
+74.58vw -78.52vh 0.90px 0.51px #fff,
+21.48vw -28.87vh 0.26px 0.28px #fff,
+-9.39vw -12.32vh 0.82px 0.47px #fff,
+-70.55vw 35.43vh 0.42px 0.47px #fff,
+93.17vw -93.51vh 0.91px 0.42px #fff,
+68.98vw -25.01vh 0.77px 0.32px #fff,
+31.83vw 99.15vh 0.10px 0.19px #fff,
+8.51vw 61.87vh 0.39px 0.33px #fff,
+68.53vw -58.68vh 0.44px 0.96px #fff,
+-14.47vw 37.49vh 0.20px 0.79px #fff,
+-85.85vw -32.47vh 0.16px 0.20px #fff,
+-80.75vw 89.49vh 0.64px 0.56px #fff,
+83.42vw -31.85vh 0.89px 0.07px #fff,
+-1.19vw 63.25vh 0.01px 0.33px #fff,
+25.31vw -54.91vh 0.64px 0.44px #fff,
+64.16vw 29.53vh 0.14px 0.40px #fff,
+4.51vw -76.44vh 0.34px 0.75px #fff,
+30.43vw -3.27vh 0.02px 0.50px #fff,
+-35.26vw 15.67vh 0.17px 0.62px #fff,
+-59.41vw -14.73vh 0.32px 0.81px #fff,
+7.01vw -4.33vh 0.65px 0.05px #fff,
+21.18vw -49.46vh 0.18px 0.11px #fff,
+-49.99vw 23.21vh 0.90px 0.98px #fff,
+-33.51vw 89.31vh 0.50px 0.89px #fff,
+-50.32vw 4.43vh 0.03px 0.03px #fff,
+-83.95vw -31.97vh 0.87px 0.84px #fff,
+-13.36vw -22.56vh 0.41px 0.16px #fff,
+30.58vw -65.84vh 0.22px 0.69px #fff,
+39.39vw 27.57vh 0.13px 0.73px #fff,
+44.23vw -22.91vh 0.04px 0.95px #fff,
+-93.02vw -12.53vh 0.84px 0.74px #fff,
+71.44vw 46.75vh 0.78px 0.26px #fff,
+-85.11vw 82.27vh 0.36px 0.19px #fff,
+42.01vw 7.93vh 0.29px 0.75px #fff,
+38.70vw -72.22vh 0.97px 0.35px #fff,
+-78.21vw 51.25vh 0.15px 0.56px #fff,
+40.43vw -71.40vh 0.12px 0.18px #fff,
+-2.03vw -28.35vh 0.12px 0.76px #fff,
+-16.46vw 35.66vh 0.69px 0.69px #fff,
+-93.09vw -46.71vh 0.64px 0.22px #fff,
+36.10vw -86.92vh 0.44px 0.55px #fff,
+55.46vw -28.26vh 0.57px 0.08px #fff,
+-29.92vw 69.85vh 0.02px 0.45px #fff,
+-14.05vw -87.90vh 0.46px 0.41px #fff,
+53.70vw 48.05vh 0.15px 0.05px #fff,
+-12.06vw -98.35vh 0.81px 0.23px #fff,
+-6.87vw -4.82vh 0.09px 0.36px #fff,
+-31.62vw -10.23vh 0.82px 0.00px #fff,
+6.17vw -80.88vh 0.62px 0.60px #fff,
+-69.64vw 60.98vh 0.80px 0.69px #fff,
+59.29vw 57.93vh 0.16px 0.88px #fff,
+-56.68vw -99.94vh 0.21px 0.37px #fff,
+-6.09vw 8.75vh 0.17px 0.76px #fff,
+66.95vw 42.92vh 0.36px 0.09px #fff,
+-50.23vw -96.40vh 0.02px 0.22px #fff,
+-14.12vw 8.39vh 0.60px 0.76px #fff,
+-88.09vw 14.86vh 0.89px 0.72px #fff,
+60.58vw -55.20vh 0.67px 0.59px #fff,
+1.64vw 81.33vh 0.95px 0.92px #fff,
+93.82vw -96.89vh 0.35px 0.13px #fff,
+89.08vw -96.79vh 0.37px 0.31px #fff,
+16.23vw -94.52vh 0.72px 0.21px #fff,
+-62.17vw 34.32vh 0.13px 0.90px #fff,
+31.43vw -13.01vh 0.12px 0.55px #fff,
+-85.54vw -62.65vh 0.44px 0.77px #fff,
+42.61vw -43.35vh 0.25px 0.02px #fff,
+73.35vw 53.64vh 0.39px 0.94px #fff,
+81.76vw 49.45vh 0.41px 0.61px #fff,
+30.03vw 84.40vh 0.31px 0.60px #fff,
+-0.75vw 82.77vh 0.94px 0.59px #fff,
+-57.48vw -57.91vh 0.28px 0.48px #fff,
+-51.21vw -26.52vh 0.46px 0.22px #fff,
+69.61vw 10.71vh 0.71px 0.17px #fff,
+-49.02vw 11.90vh 0.35px 0.87px #fff,
+-57.10vw 91.29vh 0.37px 0.96px #fff,
+-39.36vw -83.90vh 0.63px 0.56px #fff,
+72.71vw -21.40vh 0.76px 0.59px #fff,
+-36.06vw 3.63vh 0.08px 0.43px #fff,
+-11.63vw -47.76vh 0.71px 0.99px #fff,
+-97.64vw 34.57vh 0.83px 0.99px #fff,
+-59.25vw -59.08vh 0.40px 0.48px #fff,
+52.63vw 17.68vh 0.91px 0.68px #fff,
+97.84vw -89.15vh 0.47px 0.00px #fff,
+-41.92vw -11.23vh 0.99px 0.91px #fff,
+85.23vw 35.48vh 0.20px 0.65px #fff,
+16.77vw 34.71vh 0.46px 0.20px #fff,
+-31.26vw 24.67vh 0.94px 0.98px #fff,
+-3.53vw -3.91vh 0.91px 0.42px #fff,
+18.18vw -30.00vh 0.86px 0.84px #fff,
+6.42vw -80.24vh 0.42px 0.43px #fff,
+-25.46vw -91.34vh 0.52px 0.76px #fff,
+77.93vw 85.71vh 0.18px 0.84px #fff,
+-32.02vw -91.03vh 0.35px 0.87px #fff,
+13.35vw 9.49vh 0.27px 0.06px #fff,
+28.08vw 95.34vh 0.44px 0.29px #fff,
+98.34vw 29.03vh 0.75px 0.86px #fff,
+80.35vw 18.60vh 0.05px 0.97px #fff,
+7.76vw -66.17vh 0.54px 0.67px #fff,
+58.77vw 52.57vh 0.59px 0.83px #fff,
+-78.77vw -79.40vh 0.72px 0.59px #fff,
+46.01vw -6.04vh 0.08px 0.24px #fff,
+76.40vw 50.47vh 0.31px 0.68px #fff,
+-45.51vw 67.02vh 0.03px 0.48px #fff,
+80.11vw 25.99vh 0.51px 0.49px #fff,
+17.02vw 2.34vh 0.06px 0.45px #fff,
+-54.05vw -13.60vh 0.77px 0.01px #fff,
+86.02vw 14.08vh 0.11px 0.92px #fff,
+-84.20vw -28.52vh 0.84px 0.18px #fff,
+-88.93vw -39.41vh 0.68px 0.30px #fff,
+66.78vw 88.78vh 0.88px 0.43px #fff,
+-8.58vw 38.97vh 0.85px 0.37px #fff,
+73.01vw 9.15vh 0.59px 0.45px #fff,
+8.19vw -91.11vh 0.24px 0.52px #fff,
+-57.63vw 46.31vh 0.64px 0.05px #fff,
+-29.34vw -66.53vh 0.01px 0.14px #fff,
+5.21vw -1.34vh 0.17px 0.23px #fff,
+-11.02vw -65.31vh 0.08px 0.18px #fff,
+-43.45vw 71.02vh 0.86px 0.62px #fff,
+-69.67vw 58.60vh 0.20px 0.05px #fff,
+52.50vw -5.73vh 0.62px 0.76px #fff,
+25.88vw 59.49vh 0.54px 0.82px #fff,
+5.92vw 94.03vh 0.03px 0.60px #fff,
+-63.48vw -65.61vh 0.84px 0.42px #fff,
+48.24vw -19.72vh 0.58px 0.42px #fff,
+-46.53vw -92.19vh 0.73px 0.40px #fff,
+-37.65vw -2.13vh 0.32px 0.40px #fff,
+50.34vw -30.88vh 0.38px 0.40px #fff,
+-91.57vw -43.50vh 0.42px 0.36px #fff,
+31.99vw 18.27vh 0.00px 0.85px #fff,
+28.48vw 53.99vh 0.09px 0.66px #fff,
+18.22vw -97.47vh 0.91px 0.11px #fff,
+-75.21vw 72.31vh 0.38px 0.32px #fff,
+7.77vw 31.89vh 0.25px 0.40px #fff,
+19.28vw 78.58vh 0.84px 0.89px #fff,
+92.93vw 32.34vh 0.22px 0.18px #fff,
+-91.21vw -94.19vh 0.21px 0.18px #fff,
+45.97vw 11.99vh 0.92px 0.76px #fff,
+6.08vw -16.49vh 0.16px 0.95px #fff,
+-26.72vw 94.81vh 0.31px 0.21px #fff,
+-7.32vw -90.24vh 0.16px 0.13px #fff
+}
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+/* Header */
+header {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #00bfff;
+}
+
+/* Ad Banner */
+.ad-banner {
+  background-color: #363635;
+  border: 2px dashed #ff8800;
+  padding: 20px;
+  margin: 0 auto 30px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: black;
+}
+
+.ad-banner a {
+  color: #d35400;
+  text-decoration: underline;
+}
+
+/* Grid & Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(308px, 1fr));
+  gap: 27px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 13px;
+  padding: 22px;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 165px;
+  height: 165px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h3 {
+  font-size: 1.43rem;
+  margin-bottom: 11px;
+}
+
+.costs p {
+  margin: 6.6px 0;
+  font-size: 1.15rem;
+}
+
+.trend-up {
+  color: green;
+  font-weight: bold;
+  font-size: 1.32rem;
+  margin-top: 11px;
+}
+
+.trend-down {
+  color: red;
+  font-weight: bold;
+  font-size: 1.32rem;
+  margin-top: 11px;
+}
