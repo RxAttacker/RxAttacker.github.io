@@ -10,54 +10,95 @@
 <body>
   <div class="main"></div>
 
-<header>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="https://rxattacker.github.io/contact" class="nav-link">Contact Me</a>
-      <a href="https://rxattacker.github.io" class="nav-link">Value List</a>
-      <a href="#" class="nav-link">Element Calculator</a>
-      <a href="https://rxattacker.github.io/about.html" class="nav-link">About Page</a>
-      <a href="https://rxattacker.github.io/privacy.html" class="nav-link">Privacy Policy</a>
-      <a href="https://rxattacker.github.io/updates.html" class="nav-link">Website Updates / Proofing</a>
-
-    </div>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="https://rxattacker.github.io/contact" class="nav-link">Contact Me</a>
+        <a href="https://rxattacker.github.io" class="nav-link">Value List</a>
+        <a href="#" class="nav-link">Element Calculator</a>
+        <a href="https://rxattacker.github.io/about.html" class="nav-link">About Page</a>
+        <a href="https://rxattacker.github.io/privacy.html" class="nav-link">Privacy Policy</a>
+        <a href="https://rxattacker.github.io/updates.html" class="nav-link">Website Updates / Proofing</a>
+      </div>
+    </nav>
+  </header>
 
   <main class="main-content">
     <h2>Saber Simulator Value List</h2>
+
     <div class="ad-banner" style="text-align: center;">
       <p style="font-size: 1.1rem; font-weight: bold;">Get a trading ad here</p>
       <p>Want Ad space? <a href="https://rxattacker.github.io/contact">Contact Me</a></p>
     </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search a pet name..."
+        style="
+          width: 75%;
+          max-width: 850px;
+          padding: 12px 16px;
+          font-size: 16px;
+          border: none;
+          border-radius: 12px;
+          outline: none;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+          background: #1a1a1a;
+          color: white;
+        "
+      />
+    </div>
+
     <div class="grid" id="grid"></div>
   </main>
 
   <script>
+    let allData = [];
+
+    function normalize(text) {
+      return text.toLowerCase().replace(/\s+/g, '');
+    }
+
+    function renderCards(data) {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = '';
+      data.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const trendClass = item.trend === '⬆' ? 'trend-up' : 'trend-down';
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" />
+          <h3>${item.name}</h3>
+          <div class="costs">
+              <p>Normal: ${item.cost.Normal}</p>
+              <p>Golden: ${item.cost.Golden}</p>
+              <p>Shiny: ${item.cost.Shiny}</p>
+              <p>Rainbow: ${item.cost.Rainbow}</p>
+              <p>Void: ${item.cost.Void}</p>   
+          </div>
+          <p class="${trendClass}">Trend: ${item.trend}</p>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
     fetch('data.json')
       .then(res => res.json())
       .then(data => {
-        const grid = document.getElementById('grid');
-        data.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          const trendClass = item.trend === '⬆' ? 'trend-up' : 'trend-down';
-          card.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" />
-            <h3>${item.name}</h3>
-            <div class="costs">
-                <p>🌙 Normal: ${item.cost.Normal}</p>
-                <p>⚜️ Golden: ${item.cost.Golden}</p>
-                <p>✨ Shiny: ${item.cost.Shiny}</p>
-                <p>🌈 Rainbow: ${item.cost.Rainbow}</p>
-                <p>🌌 Void: ${item.cost.Void}</p>   
-            </div>
-            <p class="${trendClass}">Trend: ${item.trend}</p>
-          `;
-          grid.appendChild(card);
-        });
+        allData = data;
+        renderCards(data);
       })
       .catch(err => console.error('Failed to load data:', err));
+
+    document.addEventListener('input', e => {
+      if (e.target.id === 'searchBar') {
+        const value = normalize(e.target.value);
+        const filtered = allData.filter(item => normalize(item.name).includes(value));
+        renderCards(filtered);
+      }
+    });
   </script>
 </body>
 </html>
