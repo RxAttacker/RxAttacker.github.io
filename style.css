@@ -485,15 +485,6 @@ header {
   color: #d35400;
   text-decoration: underline;
 }
-.ad-banner .ad-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto 15px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.25);
-}
 
 /* Grid & Cards */
 .grid {
@@ -551,4 +542,36 @@ header {
   font-weight: bold;
   font-size: 1.32rem;
   margin-top: 11px;
+}
+
+.updates-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.glass-box {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  width: 45%;
+  min-width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.glass-box h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .glass-box {
+    width: 90%;
+  }
 }
