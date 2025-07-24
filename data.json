@@ -6,7 +6,7 @@
       "Normal": "N/A",
       "Golden": "5",
       "Shiny": "50",
-      "Rainbow": "650",
+      "Rainbow": "400",
       "Void": "4,500"
     },
     "trend": "4.5/5"
@@ -18,7 +18,7 @@
       "Normal": "N/A",
       "Golden": "3",
       "Shiny": "25",
-      "Rainbow": "500",
+      "Rainbow": "325",
       "Void": "3,500"
     },
     "trend": "3.5/5"
@@ -138,7 +138,7 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "15",
-      "Rainbow": "350",
+      "Rainbow": "250",
       "Void": "2,500"
     },
     "trend": "2.5/5"
