@@ -5,5 +5,12 @@
     "logs": [
       "Added the new pages"
     ]
+  },
+    {
+    "version": "1.1",
+    "date": "2025-07-22",
+    "logs": [
+      "Added a new main page, calc with mutiple features"
+    ]
   }
 ]
