@@ -1,10 +1,236 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script>
-      window.location.replace("https://rxattacker.github.io/valuelist.html")
-    </script>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RxAttacker – Home</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+    body.lock-scroll { overflow: hidden; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #0f0f2d, #1a1a40, #3a3aff, #6f00ff);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      flex-shrink: 0;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; }
+    #side-menu {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateX(-100%);
+      transition: transform 0.4s ease-in-out;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #side-menu.active { transform: translateX(0); }
+    nav ul { list-style: none; padding: 0; margin: 0; text-align: center; }
+    nav ul li { margin: 20px 0; }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.1);
+    }
+    .menu-toggle { display: flex; flex-direction: column; cursor: pointer; z-index: 1001; }
+    .menu-toggle span { height: 3px; width: 25px; background: white; margin: 4px 0; transition: 0.4s; }
+    canvas#particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+
+    .hero {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffff);
+      background-size: 300% 300%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientText 5s ease infinite;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 90%;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .hero a {
+      padding: 14px 28px;
+      font-size: 1.2rem;
+      background: #3a3aff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.3s, background 0.3s;
+      animation: popIn 1.5s ease forwards;
+    }
+    .hero a:hover { background: #5555ff; transform: scale(1.1); }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    @keyframes popIn { 0% {transform: scale(0);} 80% {transform: scale(1.1);} 100% {transform: scale(1);} }
+    @keyframes gradientText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      .hero a { font-size: 1rem; padding: 12px 20px; }
+    }
+    .github-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1002;
+      width: 50px;
+      height: 50px;
+    }
+    .github-link img {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 8px #fff);
+      transition: transform 0.3s ease;
+    }
+    .github-link img:hover {
+      transform: scale(1.2);
+    }
+    .cursor-light {
+      position: fixed;
+      top: 0; left: 0;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(100,150,255,0.25) 0%, rgba(100,150,255,0) 70%);
+      pointer-events: none;
+      mix-blend-mode: screen;
+      transform: translate(-50%, -50%);
+      transition: transform 0.08s linear;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="cursor-light" id="cursorLight"></div>
+  <header>
+    <div class="logo">RxAttacker</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+  <div id="side-menu">
+    <nav>
+      <ul>
+        <li><a href="https://rxattacker.github.io/contact">Contact Me</a></li>
+        <li><a href="https://rxattacker.github.io">Value List</a></li>
+        <li><a href="#">Element Calculator</a></li>
+        <li><a href="https://rxattacker.github.io/about.html">About Page</a></li>
+        <li><a href="https://rxattacker.github.io/privacy.html">Privacy Policy</a></li>
+        <li><a href="https://rxattacker.github.io/updates.html">Website Updates / Proofing</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section class="hero">
+    <h1>Welcome to<br>RxAttacker</h1>
+    <p>A modern hub for calculators,<br>value lists, and website updates.<br>Built for speed and simplicity<br>with a clean design.</p>
+    <a href="https://rxattacker.github.io/valuelist.html">Check the Value List</a>
+  </section>
+  <a class="github-link" href="https://github.com/RxAttacker" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"/>
+  </a>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sideMenu = document.getElementById('side-menu');
+    const body = document.body;
+    menuToggle.addEventListener('click', () => {
+      const isActive = sideMenu.classList.toggle('active');
+      body.classList.toggle('lock-scroll', isActive);
+    });
+
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+    for (let i = 0; i < 60; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 2 + 1,
+        speedX: (Math.random() - 0.5) * 0.5,
+        speedY: (Math.random() - 0.5) * 0.5,
+        color: `hsl(${Math.random() * 360}, 100%, 75%)`
+      });
+    }
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+        ctx.beginPath();
+        ctx.fillStyle = p.color;
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = p.color;
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    const cursorLight = document.getElementById('cursorLight');
+    document.addEventListener('mousemove', (e) => {
+
+    });
+  </script>
+</body>
 </html>
