@@ -138,10 +138,22 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "25",
-      "Void": "200"
+      "Rainbow": "20",
+      "Void": "150"
     },
     "trend": "3.5/5"
+  },
+     {
+     "name": "Rockstar X",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1398379246979780629/image.png?ex=688525a9&is=6883d429&hm=cc933cafe0a37eba659db31c16fa8339f242b3af5458fac9feea4e307ed5f361&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "50",
+      "Rainbow": "600",
+      "Void": "4.5k - 5k"
+    },
+    "trend": "4/5"
   }
 ]
 
