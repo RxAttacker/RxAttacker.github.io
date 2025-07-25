@@ -7,9 +7,9 @@
       "Golden": "5",
       "Shiny": "50",
       "Rainbow": "400",
-      "Void": "4,500"
+      "Void": "3,250"
     },
-    "trend": "4.5/5"
+    "trend": "4/5"
   },
   {
     "name": "Fire Empyrean",
@@ -19,16 +19,16 @@
       "Golden": "3",
       "Shiny": "25",
       "Rainbow": "325",
-      "Void": "3,500"
+      "Void": "2,500"
     },
-    "trend": "3.5/5"
+    "trend": "3/5"
   },
   {
      "name": "Blitzshade",
     "image": "https://cdn.discordapp.com/attachments/1389502233485512768/1396947553982877906/Screenshot_20250721_230941_Roblox.jpg?ex=687ff04a&is=687e9eca&hm=095197e30bf80c15f89c0ee0bcaa8e2e77220e898547e24ca2492dc43b1f9c60&",
     "cost": {
-      "Normal": "475",
-      "Golden": "5,750",
+      "Normal": "425",
+      "Golden": "5,250",
       "Shiny": "27,500",
       "Rainbow": "105k+",
       "Void": "N/A"
@@ -42,22 +42,10 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "25",
-      "Void": "100"
+      "Rainbow": "15",
+      "Void": "75"
     },
     "trend": "2/5"    
-  },
-  {
-     "name": "Lvl 90+ Lumina",
-    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396980318929555667/image.png?ex=68800ece&is=687ebd4e&hm=8891e00d26d590ec3ff702c076faa1b2e9854b580d738b29d9f79c4817a6a684&",
-    "cost": {
-      "Normal": "N/A",
-      "Golden": "N/A",
-      "Shiny": "N/A",
-      "Rainbow": "145",
-      "Void": "575"
-    },
-    "trend": "2/5"
   },
   {
      "name": "Lady Liberty",
@@ -79,9 +67,9 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "245",
-      "Void": "750"
+      "Void": "650"
     },
-    "trend": "1.5/5"
+    "trend": "1/5"
   },
     {
      "name": "High LvL. Summer Wrath",
@@ -90,10 +78,10 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "300",
-      "Void": "850"
+      "Rainbow": "75",
+      "Void": "430"
     },
-    "trend": "2/5"
+    "trend": "1/5"
   },
      {
      "name": "Azure Skull",
@@ -102,8 +90,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "20",
-      "Void": "125"
+      "Rainbow": "5",
+      "Void": "45"
     },
     "trend": "0.5/5"
   },
@@ -111,7 +99,7 @@
      "name": "Amethyst Overlord",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
-      "Normal": "250",
+      "Normal": "25",
       "Golden": "3,500",
       "Shiny": "20,000",
       "Rainbow": "75k+",
@@ -127,9 +115,9 @@
       "Golden": "N/A",
       "Shiny": "5",
       "Rainbow": "30",
-      "Void": "125"
+      "Void": "100"
     },
-    "trend": "2.5/5"
+    "trend": "2/5"
   },
     {
      "name": "Celestial Shard",
@@ -138,10 +126,22 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "15",
-      "Rainbow": "250",
-      "Void": "2,500"
+      "Rainbow": "150",
+      "Void": "1,750"
     },
-    "trend": "2.5/5"
+    "trend": "2/5"
+  },
+    {
+     "name": "Rich X",
+    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1398377882920685578/image.png?ex=68852463&is=6883d2e3&hm=801767a479d632f4d130364f1bb01642f632068ee097ab1c49b5185fbded3d49&",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "25",
+      "Void": "200"
+    },
+    "trend": "3.5/5"
   }
 ]
 
