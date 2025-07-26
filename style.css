@@ -435,7 +435,7 @@ body {
   }
 }
 
-/* Header */
+
 header {
   background-color: #222;
   position: fixed;
@@ -475,8 +475,6 @@ header {
 .nav-link:hover {
   color: #00bfff;
 }
-
-/* Ad Banner */
 .ad-banner {
   background-color: #363635;
   border: 2px dashed #ff8800;
@@ -496,7 +494,7 @@ header {
   text-decoration: underline;
 }
 
-/* Grid & Cards */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(308px, 1fr));
@@ -584,4 +582,22 @@ header {
   .glass-box {
     width: 90%;
   }
+}
+
+main h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 600% 600%;
+  background-clip: text;          
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  animation: h2GradientShift 4s ease infinite;
+  margin-top: 40px;
+}
+@keyframes h2GradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
