@@ -47,30 +47,6 @@
     },
     "trend": "2/5"    
   },
-  {
-     "name": "Lady Liberty",
-    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396980880043540590/image.png?ex=68800f54&is=687ebdd4&hm=585faec531feb2e59c3be5013ef7c76c9479d589d4b039009027c3a732e5f612&",
-    "cost": {
-      "Normal": "N/A",
-      "Golden": "N/A",
-      "Shiny": "N/A",
-      "Rainbow": "8",
-      "Void": "80"
-    },
-    "trend": "0.5/5"
-  },
-    {
-     "name": "High LvL. Mermaid Majesty",
-    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396981969501556866/image.png?ex=68801058&is=687ebed8&hm=aa0584953adf685073f9dc218baf4a92c40ba9c8335f3020991867ff1a097a66&",
-    "cost": {
-      "Normal": "N/A",
-      "Golden": "N/A",
-      "Shiny": "N/A",
-      "Rainbow": "245",
-      "Void": "650"
-    },
-    "trend": "1/5"
-  },
     {
      "name": "High LvL. Summer Wrath",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984056721182850/image.png?ex=68801249&is=687ec0c9&hm=ad582f373761591b1985d32d577de4f859dec2a419bf95b19d9cc3d6ad64b0b6&",
@@ -102,7 +78,7 @@
       "Normal": "250",
       "Golden": "3,500",
       "Shiny": "20,000",
-      "Rainbow": "75k+",
+      "Rainbow": "65k+",
       "Void": "600k+"
     },
     "trend": "3.5/5"
@@ -115,9 +91,9 @@
       "Golden": "N/A",
       "Shiny": "5",
       "Rainbow": "30",
-      "Void": "100"
+      "Void": "45-100"
     },
-    "trend": "2/5"
+    "trend": "1/5"
   },
     {
      "name": "Celestial Shard",
@@ -139,9 +115,9 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "20",
-      "Void": "150"
+      "Void": "100"
     },
-    "trend": "3.5/5"
+    "trend": "3/5"
   },
      {
      "name": "Rockstar X",
