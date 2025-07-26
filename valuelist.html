@@ -8,31 +8,220 @@
   <meta name="description" content="Updated Saber Simulator Value List with current item prices, rarity, and trading values.">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.counter.dev/script.js" data-id="f574c2ff-102d-4163-9d5e-f0196a3891b8" data-utcoffset="-7"></script>
+  <style>
+.golden-label {
+  color: #FFD700;
+  text-shadow: 0 0 8px #FFD700, 0 0 12px #FFA500;
+  font-weight: bold;
+}
+.shiny-label {
+  color: #C0C0C0;
+  text-shadow: 0 0 6px #FFFFFF, 0 0 12px #C0C0C0;
+  animation: shinySparkle 1.2s infinite alternate;
+  font-weight: bold;
+}
+@keyframes shinySparkle {
+  0% { text-shadow: 0 0 4px #fff, 0 0 8px #ccc; }
+  100% { text-shadow: 0 0 12px #fff, 0 0 20px #ccc; }
+}
+.rainbow-label {
+  font-weight: bold;
+  animation: rainbowHue 3s linear infinite;
+}
+@keyframes rainbowHue {
+  0% { filter: hue-rotate(0deg); color: red; }
+  100% { filter: hue-rotate(360deg); color: red; }
+}
+.void-label {
+  background: linear-gradient(270deg,#a64ca6,#8b008b,#4B0082,#800080);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: voidPulse 3s ease infinite;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ba55d3, 0 0 20px #800080;
+}
+@keyframes voidPulse {
+  0% { text-shadow: 0 0 5px #ba55d3,0 0 10px #800080; }
+  50% { text-shadow: 0 0 15px #ba55d3,0 0 30px #800080; }
+  100% { text-shadow: 0 0 5px #ba55d3,0 0 10px #800080; }
+}
+.na-value {
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+html, body { overflow-x: hidden; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+main h2 { margin-top: 70px; }
+main { padding-top: 70px; }
+.hamburger { font-size: 2rem; cursor: pointer; color: white; z-index: 3000; }
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-menu.show { opacity: 1; pointer-events: all; }
+.menu-container {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 20px;
+  background: transparent;
+  padding: 40px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+  margin-bottom: 40px;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+  z-index: 3001;
+}
+.close-btn:hover { color: #f55; text-shadow: 0 0 10px #f55; }
+.menu-links { display: flex; flex-direction: column; align-items: center; width: 100%; }
+.menu-links a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.7rem;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px 30px;
+  margin: 12px 0;
+  width: 80%;
+  max-width: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
+.menu-links a:hover {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  border-color: #0ff;
+  background: rgba(0, 255, 255, 0.15);
+}
+.menu-links a.calc-btn {
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 400% 400%;
+  color: white !important;
+  border: none;
+  animation: calcGradient 5s ease infinite;
+}
+@keyframes calcGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@media (max-width: 768px) {
+  .menu-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background: transparent;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-links a {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 12px 0;
+  }
+}
+  </style>
 </head>
 <body>
   <div class="main"></div>
-
   <header>
-    <nav class="navbar">
-      <div class="nav-container">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+  <div class="side-menu" id="sideMenu">
+    <div class="menu-container">
+      <span class="menu-title">Menu</span>
+      <div class="menu-links">
         <a href="https://rxattacker.github.io/contact" class="nav-link">Contact Me</a>
         <a href="https://rxattacker.github.io/valuelist.html" class="nav-link">Value List</a>
-        <a href="https://rxattacker.github.io/calc.html" class="nav-link">Element Calculator</a>
+        <a href="https://rxattacker.github.io/calc.html" class="nav-link calc-btn">Element Calculator</a>
         <a href="https://rxattacker.github.io/about.html" class="nav-link">About Page</a>
         <a href="https://rxattacker.github.io/privacy.html" class="nav-link">Privacy Policy</a>
         <a href="https://rxattacker.github.io/updates.html" class="nav-link">Website Updates / Proofing</a>
       </div>
-    </nav>
-  </header>
-
+    </div>
+    <span class="close-btn" id="closeMenu">&times;</span>
+  </div>
   <main class="main-content">
     <h2>Saber Simulator Value List</h2>
-
-    <div class="ad-banner" style="text-align: center;">
-      <p style="font-size: 1.1rem; font-weight: bold;">Get a trading ad here</p>
-      <p>Want Ad space? <a href="https://rxattacker.github.io/contact">Contact Me</a></p>
-    </div>
-
+    <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1rem;">
+ Welcome to the Saber Simulator Value List, the community's go to source for current and precise trading values. 
+  To assist you in making wise choices when purchasing, selling, or trading ingame pets, you can find comprehensive information on pet values and trading trends here. 
+  To guarantee that you always have the most recent prices available, our list is updated frequently in response to player feedback and market activity. 
+  Our platform is made to give you the information and resources you require, regardless of whether you're a novice player looking for easy to follow advice or an expert trader seeking sophisticated insights. 
+  With our trustworthy and communitydriven value list, you can stay informed, trade more wisely, and get the most out of your Saber Simulator experience.
+    </p>
     <div style="display: flex; justify-content: center; margin-bottom: 20px;">
       <input
         type="text"
@@ -52,16 +241,16 @@
         "
       />
     </div>
-
     <div class="grid" id="grid"></div>
   </main>
-
   <script>
+    const hamburger = document.getElementById('hamburger');
+    const sideMenu = document.getElementById('sideMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    hamburger.addEventListener('click', () => { sideMenu.classList.add('show'); });
+    closeMenu.addEventListener('click', () => { sideMenu.classList.remove('show'); });
     let allData = [];
-
-    function normalize(text) {
-      return text.toLowerCase().replace(/\s+/g, '');
-    }
+    function normalize(text) { return text.toLowerCase().replace(/\s+/g, ''); }
 
     function renderCards(data) {
       const grid = document.getElementById('grid');
@@ -69,18 +258,26 @@
       data.forEach(item => {
         const card = document.createElement('div');
         card.className = 'card';
-        const trendClass = item.trend === '⬆' ? 'trend-up' : 'trend-down';
+        const trendValue = parseFloat(item.trend);
+        let trendStyle = '';
+        if (!isNaN(trendValue)) {
+          if (trendValue <= 1) trendStyle = 'color:#ff1a1a; font-weight:bold; text-shadow:0 0 10px #ff0000;';
+          else if (trendValue <= 2) trendStyle = 'color:#ff751a; font-weight:bold; text-shadow:0 0 8px #ff6600;';
+          else if (trendValue <= 3) trendStyle = 'color:#ffd11a; font-weight:bold; text-shadow:0 0 6px #ffaa00;';
+          else if (trendValue <= 4) trendStyle = 'color:#a6ff1a; font-weight:bold; text-shadow:0 0 8px #a6ff00;';
+          else if (trendValue === 5) trendStyle = 'color:#1aff1a; font-weight:bold; text-shadow:0 0 12px #00ff00,0 0 20px #00ff00;';
+        } else trendStyle = 'color:white;';
         card.innerHTML = `
           <img src="${item.image}" alt="${item.name}" />
           <h3>${item.name}</h3>
           <div class="costs">
-              <p>Normal: ${item.cost.Normal}</p>
-              <p>Golden: ${item.cost.Golden}</p>
-              <p>Shiny: ${item.cost.Shiny}</p>
-              <p>Rainbow: ${item.cost.Rainbow}</p>
-              <p>Void: ${item.cost.Void}</p>   
+              <p><span class="normal-label">Normal:</span> <span class="${item.cost.Normal === 'N/A' ? 'na-value' : ''}">${item.cost.Normal}</span></p>
+              <p><span class="golden-label">Golden:</span> <span class="${item.cost.Golden === 'N/A' ? 'na-value' : ''}">${item.cost.Golden}</span></p>
+              <p><span class="shiny-label">Shiny:</span> <span class="${item.cost.Shiny === 'N/A' ? 'na-value' : ''}">${item.cost.Shiny}</span></p>
+              <p><span class="rainbow-label">Rainbow:</span> <span class="${item.cost.Rainbow === 'N/A' ? 'na-value' : 'rainbow-price'}">${item.cost.Rainbow}</span></p>
+              <p><span class="void-label">Void:</span> <span class="${item.cost.Void === 'N/A' ? 'na-value' : ''}">${item.cost.Void}</span></p>
           </div>
-          <p class="${trendClass}">Trend: ${item.trend}</p>
+          <p style="${trendStyle}">Trend: ${item.trend}</p>
         `;
         grid.appendChild(card);
       });
@@ -88,12 +285,8 @@
 
     fetch('data.json')
       .then(res => res.json())
-      .then(data => {
-        allData = data;
-        renderCards(data);
-      })
+      .then(data => { allData = data; renderCards(data); })
       .catch(err => console.error('Failed to load data:', err));
-
     document.addEventListener('input', e => {
       if (e.target.id === 'searchBar') {
         const value = normalize(e.target.value);
