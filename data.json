@@ -6,8 +6,8 @@
       "Normal": "N/A",
       "Golden": "5",
       "Shiny": "50",
-      "Rainbow": "400",
-      "Void": "3,250"
+      "Rainbow": "300-450",
+      "Void": "3K-3.5K"
     },
     "trend": "4/5"
   },
@@ -18,18 +18,18 @@
       "Normal": "N/A",
       "Golden": "3",
       "Shiny": "25",
-      "Rainbow": "325",
-      "Void": "2,500"
+      "Rainbow": "200",
+      "Void": "2,250"
     },
-    "trend": "3/5"
+    "trend": "2/5"
   },
   {
      "name": "Blitzshade",
     "image": "https://cdn.discordapp.com/attachments/1389502233485512768/1396947553982877906/Screenshot_20250721_230941_Roblox.jpg?ex=687ff04a&is=687e9eca&hm=095197e30bf80c15f89c0ee0bcaa8e2e77220e898547e24ca2492dc43b1f9c60&",
     "cost": {
-      "Normal": "425",
-      "Golden": "4,500",
-      "Shiny": "27,500",
+      "Normal": "400",
+      "Golden": "3,250K-4,750k",
+      "Shiny": "25,000-28,500",
       "Rainbow": "105k+",
       "Void": "N/A"
     },
@@ -47,18 +47,6 @@
     },
     "trend": "2/5"    
   },
-    {
-     "name": "High LvL. Summer Wrath",
-    "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984056721182850/image.png?ex=68801249&is=687ec0c9&hm=ad582f373761591b1985d32d577de4f859dec2a419bf95b19d9cc3d6ad64b0b6&",
-    "cost": {
-      "Normal": "N/A",
-      "Golden": "N/A",
-      "Shiny": "N/A",
-      "Rainbow": "75",
-      "Void": "430"
-    },
-    "trend": "1/5"
-  },
      {
      "name": "Azure Skull",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396983027099500564/image.png?ex=68801154&is=687ebfd4&hm=23c1ecf7d7cd6a814e559feac0b903357edffa41345deef765c6f4bdea978a56&",
@@ -66,19 +54,19 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "5",
-      "Void": "45"
+      "Rainbow": "N/A",
+      "Void": "25"
     },
-    "trend": "0.5/5"
+    "trend": "0/5"
   },
        {
      "name": "Amethyst Overlord",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
-      "Normal": "250",
-      "Golden": "3,500",
-      "Shiny": "20,000",
-      "Rainbow": "65k+",
+      "Normal": "225",
+      "Golden": "3,000-3,750",
+      "Shiny": "19,000",
+      "Rainbow": "60k+",
       "Void": "600k+"
     },
     "trend": "3.5/5"
@@ -105,7 +93,7 @@
       "Rainbow": "150",
       "Void": "1,750"
     },
-    "trend": "2/5"
+    "trend": "1.5/5"
   },
     {
      "name": "Rich X",
@@ -117,7 +105,7 @@
       "Rainbow": "20",
       "Void": "100"
     },
-    "trend": "3/5"
+    "trend": "2/5"
   },
      {
      "name": "Rockstar X",
@@ -127,9 +115,9 @@
       "Golden": "N/A",
       "Shiny": "50",
       "Rainbow": "600",
-      "Void": "4.5k - 5k"
+      "Void": "4k - 4.5k"
     },
-    "trend": "4/5"
+    "trend": "3.5/5"
   }
 ]
 
