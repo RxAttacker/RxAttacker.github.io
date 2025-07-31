@@ -27,8 +27,8 @@
      "name": "Blitzshade",
     "image": "https://cdn.discordapp.com/attachments/1389502233485512768/1396947553982877906/Screenshot_20250721_230941_Roblox.jpg?ex=687ff04a&is=687e9eca&hm=095197e30bf80c15f89c0ee0bcaa8e2e77220e898547e24ca2492dc43b1f9c60&",
     "cost": {
-      "Normal": "350-400",
-      "Golden": "3,250-4,750",
+      "Normal": "325-400",
+      "Golden": "3,150-4,400",
       "Shiny": "23,000-26,000",
       "Rainbow": "95k+",
       "Void": "N/A"
@@ -63,7 +63,7 @@
      "name": "Amethyst Overlord",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
-      "Normal": "225",
+      "Normal": "175-230",
       "Golden": "2,500-3,500",
       "Shiny": "19,000",
       "Rainbow": "60k+",
@@ -79,7 +79,7 @@
       "Golden": "N/A",
       "Shiny": "5",
       "Rainbow": "30",
-      "Void": "45-100"
+      "Void": "40-125"
     },
     "trend": "1/5"
   },
@@ -91,7 +91,7 @@
       "Golden": "N/A",
       "Shiny": "15",
       "Rainbow": "150",
-      "Void": "1,750"
+      "Void": "1,700"
     },
     "trend": "1.5/5"
   },
@@ -103,7 +103,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "20",
-      "Void": "100"
+      "Void": "85-150"
     },
     "trend": "2/5"
   },
@@ -113,8 +113,8 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "35",
-      "Rainbow": "600",
+      "Shiny": "30",
+      "Rainbow": "350",
       "Void": "4k - 4.5k"
     },
     "trend": "3.5/5"
