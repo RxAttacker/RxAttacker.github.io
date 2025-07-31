@@ -5,7 +5,7 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "5",
-      "Shiny": "50",
+      "Shiny": "25",
       "Rainbow": "300-450",
       "Void": "2.5K-3k"
     },
@@ -113,7 +113,7 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "50",
+      "Shiny": "35",
       "Rainbow": "600",
       "Void": "4k - 4.5k"
     },
