@@ -131,16 +131,16 @@
     },
     "trend": "3/5"
   },        {
-     "name": "Dark Night Slayer",
-    "image": "https://i.imgur.com/KZ5Pfwf.png",
+     "name": "Universe Ruler",
+    "image": "https://i.imgur.com/nn262Em.png",
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "N/A",
-      "Rainbow": "30",
-      "Void": "115"
+      "Shiny": "60",
+      "Rainbow": "650",
+      "Void": "3.7-4.2k"
     },
-    "trend": "3/5"
+    "trend": "5/5"
   }
 ]
 
