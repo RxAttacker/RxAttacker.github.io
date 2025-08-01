@@ -7,7 +7,7 @@
       "Golden": "5",
       "Shiny": "25",
       "Rainbow": "300-450",
-      "Void": "2.5K-3k"
+      "Void": "2K-2.5k"
     },
     "trend": "3/5"
   },
@@ -16,10 +16,10 @@
     "image": "https://i.imgur.com/4BzbI0i.png",
     "cost": {
       "Normal": "N/A",
-      "Golden": "3",
-      "Shiny": "25",
-      "Rainbow": "200",
-      "Void": "2,250"
+      "Golden": "N/A",
+      "Shiny": "20",
+      "Rainbow": "185",
+      "Void": "1.95k-2,100"
     },
     "trend": "2/5"
   },
@@ -28,8 +28,8 @@
     "image": "https://cdn.discordapp.com/attachments/1389502233485512768/1396947553982877906/Screenshot_20250721_230941_Roblox.jpg?ex=687ff04a&is=687e9eca&hm=095197e30bf80c15f89c0ee0bcaa8e2e77220e898547e24ca2492dc43b1f9c60&",
     "cost": {
       "Normal": "325-400",
-      "Golden": "3,150-4,400",
-      "Shiny": "23,000-26,000",
+      "Golden": "3,100-4,300",
+      "Shiny": "22,450-25,500",
       "Rainbow": "95k+",
       "Void": "N/A"
     },
@@ -43,7 +43,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "15",
-      "Void": "75"
+      "Void": "25-50"
     },
     "trend": "2/5"    
   },
@@ -55,7 +55,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "N/A",
-      "Void": "25"
+      "Void": "15"
     },
     "trend": "0/5"
   },
@@ -63,13 +63,13 @@
      "name": "Amethyst Overlord",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
-      "Normal": "175-230",
-      "Golden": "2,500-3,500",
-      "Shiny": "19,000",
-      "Rainbow": "60k+",
+      "Normal": "170-220",
+      "Golden": "2,200-3,500",
+      "Shiny": "18,000",
+      "Rainbow": "55k+",
       "Void": "400K?+"
     },
-    "trend": "3.5/5"
+    "trend": "3/5"
   },
        {
      "name": "Glimmerwing",
@@ -79,7 +79,7 @@
       "Golden": "N/A",
       "Shiny": "5",
       "Rainbow": "30",
-      "Void": "40-125"
+      "Void": "30-85"
     },
     "trend": "1/5"
   },
@@ -91,7 +91,7 @@
       "Golden": "N/A",
       "Shiny": "15",
       "Rainbow": "150",
-      "Void": "1,700"
+      "Void": "1,500"
     },
     "trend": "1.5/5"
   },
@@ -103,9 +103,9 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "20",
-      "Void": "85-150"
+      "Void": "40-95"
     },
-    "trend": "2/5"
+    "trend": "1/5"
   },
      {
      "name": "Rockstar X",
@@ -115,9 +115,32 @@
       "Golden": "N/A",
       "Shiny": "30",
       "Rainbow": "350",
-      "Void": "4k - 4.5k"
+      "Void": "3k - 3.75k"
     },
-    "trend": "3.5/5"
+    "trend": "3/5"
+  },
+       {
+     "name": "Dark Night Slayer",
+    "image": "https://i.imgur.com/KZ5Pfwf.png",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "30",
+      "Void": "115"
+    },
+    "trend": "3/5"
+  },        {
+     "name": "Dark Night Slayer",
+    "image": "https://i.imgur.com/KZ5Pfwf.png",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "30",
+      "Void": "115"
+    },
+    "trend": "3/5"
   }
 ]
 
