@@ -6,7 +6,7 @@
       "Normal": "N/A",
       "Golden": "5",
       "Shiny": "25",
-      "Rainbow": "300-450",
+      "Rainbow": "250-350",
       "Void": "1.9k-2.3"
     },
     "trend": "3/5"
@@ -18,8 +18,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "20",
-      "Rainbow": "185",
-      "Void": "1.95k-2,100"
+      "Rainbow": "100",
+      "Void": "1k"
     },
     "trend": "2/5"
   },
@@ -43,7 +43,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "15",
-      "Void": "25-50"
+      "Void": "25-45"
     },
     "trend": "2/5"    
   },
@@ -55,7 +55,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "N/A",
-      "Void": "15"
+      "Void": "8"
     },
     "trend": "0/5"
   },
@@ -64,9 +64,9 @@
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
       "Normal": "165-210",
-      "Golden": "2,200-3,500",
+      "Golden": "2000-3400",
       "Shiny": "18,000",
-      "Rainbow": "55k+",
+      "Rainbow": "50k+",
       "Void": "400K?+"
     },
     "trend": "3/5"
@@ -79,7 +79,7 @@
       "Golden": "N/A",
       "Shiny": "5",
       "Rainbow": "30",
-      "Void": "30-85"
+      "Void": "30-65"
     },
     "trend": "1/5"
   },
@@ -90,8 +90,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "15",
-      "Rainbow": "150",
-      "Void": "1,500"
+      "Rainbow": "95",
+      "Void": "800"
     },
     "trend": "1.5/5"
   },
@@ -115,7 +115,7 @@
       "Golden": "N/A",
       "Shiny": "30",
       "Rainbow": "350",
-      "Void": "3k - 3.75k"
+      "Void": "2.8k - 3.3k"
     },
     "trend": "3/5"
   },
@@ -127,7 +127,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "30",
-      "Void": "115"
+      "Void": "95"
     },
     "trend": "3/5"
   },        {
@@ -138,7 +138,7 @@
       "Golden": "N/A",
       "Shiny": "60",
       "Rainbow": "650",
-      "Void": "4-4.5k"
+      "Void": "4k-4.4k"
     },
     "trend": "5/5"
   }
