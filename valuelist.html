@@ -4,15 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saber Simulator Value List – Dungeons, Dark Night Slayer, Universe Ruler</title>
-  <meta name="description" content="Updated Saber Simulator Value List including Dungeons, New Updater, Dark Night Slayer, Universe Ruler and more trading values.">
-  <meta name="keywords" content="Saber Simulator value list, Dungeons value list, New Updater value list, Dark Night Slayer value list, Universe Ruler value list, trading values">
+  <title>Saber Simulator Value List – Updated Prices</title>
+  <meta name="description" content="Updated Saber Simulator Value List with current item prices, rarity, and trading values.">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="https://i.imgur.com/J2HwuPZ.png">
   <script src="https://cdn.counter.dev/script.js" data-id="f574c2ff-102d-4163-9d5e-f0196a3891b8" data-utcoffset="-7"></script>
   <style>
-.seo-hidden { display: none; visibility: hidden; }
-
 .golden-label {
   color: #FFD700;
   text-shadow: 0 0 8px #FFD700, 0 0 12px #FFA500;
@@ -196,9 +192,65 @@ main { padding-top: 70px; }
     margin: 12px 0;
   }
 }
+#welcomeOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,20,0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3002;
+}
+#welcomeBox {
+  max-width: 640px;
+  width: 90%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 26px;
+  text-align: center;
+  color: #fff;
+}
+#welcomeBox h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.6rem;
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+#welcomeBox p { margin: 0 0 18px 0; line-height: 1.5; }
+#welcomeOk {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 400% 400%;
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+  animation: calcGradient 5s ease infinite;
+}
   </style>
 </head>
 <body>
+ <div id="welcomeOverlay">
+  <div id="welcomeBox">
+    <h3>NOTICE!!!</h3>
+    <p>
+      Ping @ever_soul @henry_dev and protest for better coins, these guys make MILLIONS of robux every day just for us to fucking suck there asshole with this BULLSHIT 
+      <a href="https://discord.com/invite/AmVxNeg" target="_blank" style="color:#0ff; text-decoration:underline;">
+        https://discord.com/invite/AmVxNeg
+      </a>, WE are NOT pigs who would eat up this bullshit coin nerf, also if we do this I update the value list with new pets highkey!
+    </p>
+    <button id="welcomeOk">Okay, FUCK HD GAMES</button>
+  </div>
+</div>
+
+
   <div class="main"></div>
   <header>
     <div class="hamburger" id="hamburger">&#9776;</div>
@@ -218,10 +270,6 @@ main { padding-top: 70px; }
     <span class="close-btn" id="closeMenu">&times;</span>
   </div>
   <main class="main-content">
-    <div class="seo-hidden">
-      Dungeons value list, New Updater value list, Dark Night Slayer value list, Universe Ruler value list,
-      Saber Simulator trading values, rare item prices, updated pet values
-    </div>
     <h2>Saber Simulator Value List</h2>
     <p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.1rem;">
  Welcome to the Saber Simulator Value List, the community's go to source for current and precise trading values. 
@@ -257,6 +305,11 @@ main { padding-top: 70px; }
     const closeMenu = document.getElementById('closeMenu');
     hamburger.addEventListener('click', () => { sideMenu.classList.add('show'); });
     closeMenu.addEventListener('click', () => { sideMenu.classList.remove('show'); });
+
+    const welcomeOverlay = document.getElementById('welcomeOverlay');
+    const welcomeOk = document.getElementById('welcomeOk');
+    welcomeOk.addEventListener('click', () => { welcomeOverlay.style.display = 'none'; });
+
     let allData = [];
     function normalize(text) { return text.toLowerCase().replace(/\s+/g, ''); }
 
@@ -295,6 +348,7 @@ main { padding-top: 70px; }
       .then(res => res.json())
       .then(data => { allData = data; renderCards(data); })
       .catch(err => console.error('Failed to load data:', err));
+
     document.addEventListener('input', e => {
       if (e.target.id === 'searchBar') {
         const value = normalize(e.target.value);
