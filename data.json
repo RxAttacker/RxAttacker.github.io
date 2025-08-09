@@ -4,12 +4,12 @@
     "image": "https://i.imgur.com/jejUmGm.png",
     "cost": {
       "Normal": "N/A",
-      "Golden": "5",
-      "Shiny": "25",
-      "Rainbow": "250-350",
-      "Void": "1.9k-2.3"
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "120",
+      "Void": "1.1K"
     },
-    "trend": "3/5"
+    "trend": "1/5"
   },
   {
     "name": "Fire Empyrean",
@@ -17,23 +17,23 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "20",
-      "Rainbow": "100",
-      "Void": "1k"
+      "Shiny": "N/A",
+      "Rainbow": "80",
+      "Void": "800"
     },
-    "trend": "2/5"
+    "trend": "1/5"
   },
   {
      "name": "Blitzshade",
     "image": "https://cdn.discordapp.com/attachments/1389502233485512768/1396947553982877906/Screenshot_20250721_230941_Roblox.jpg?ex=687ff04a&is=687e9eca&hm=095197e30bf80c15f89c0ee0bcaa8e2e77220e898547e24ca2492dc43b1f9c60&",
     "cost": {
-      "Normal": "250-350",
-      "Golden": "2.9k-3.4k",
-      "Shiny": "22,450-25,500",
-      "Rainbow": "95k+",
+      "Normal": "150",
+      "Golden": "1.5k-2.1K",
+      "Shiny": "18k-20k",
+      "Rainbow": "65k+",
       "Void": "N/A"
     },
-    "trend": "5/5"
+    "trend": "3/5"
   },
   {
      "name": "Ice Goddess",
@@ -55,7 +55,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "N/A",
-      "Void": "8"
+      "Void": "RIP if u tryna sell this i will give u 1 gem"
     },
     "trend": "0/5"
   },
@@ -63,10 +63,10 @@
      "name": "Amethyst Overlord",
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
-      "Normal": "165-210",
-      "Golden": "2000-3400",
-      "Shiny": "18,000",
-      "Rainbow": "50k+",
+      "Normal": "70",
+      "Golden": "700-1300",
+      "Shiny": "10K",
+      "Rainbow": "35k+",
       "Void": "400K?+"
     },
     "trend": "3/5"
@@ -77,11 +77,11 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "5",
-      "Rainbow": "30",
-      "Void": "30-65"
+      "Shiny": "N/A",
+      "Rainbow": "5",
+      "Void": "25-40"
     },
-    "trend": "1/5"
+    "trend": "0/5"
   },
     {
      "name": "Celestial Shard",
@@ -89,11 +89,11 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "15",
-      "Rainbow": "95",
-      "Void": "800"
+      "Shiny": "N/A",
+      "Rainbow": "50",
+      "Void": "500"
     },
-    "trend": "1.5/5"
+    "trend": "1/5"
   },
     {
      "name": "Rich X",
@@ -102,8 +102,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "20",
-      "Void": "40-95"
+      "Rainbow": "N/A",
+      "Void": "20-50"
     },
     "trend": "1/5"
   },
@@ -126,19 +126,19 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "30",
-      "Void": "95"
+      "Rainbow": "N/A",
+      "Void": "75"
     },
-    "trend": "3/5"
+    "trend": "2/5"
   },        {
      "name": "Universe Ruler",
     "image": "https://i.imgur.com/nn262Em.png",
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "60",
-      "Rainbow": "650",
-      "Void": "4k-4.4k"
+      "Shiny": "n/A",
+      "Rainbow": "200",
+      "Void": "2K"
     },
     "trend": "5/5"
   }
