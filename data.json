@@ -130,7 +130,8 @@
       "Void": "75"
     },
     "trend": "2/5"
-  },        {
+  },
+  {
      "name": "Universe Ruler",
     "image": "https://i.imgur.com/nn262Em.png",
     "cost": {
@@ -139,6 +140,18 @@
       "Shiny": "n/A",
       "Rainbow": "200",
       "Void": "2K"
+    },
+    "trend": "5/5"
+  },
+    {
+     "name": "Eclipse",
+    "image": "https://i.imgur.com/j5x4EQe.png",
+    "cost": {
+      "Normal": "450-500",
+      "Golden": "4.5k-5k",
+      "Shiny": "26-31k",
+      "Rainbow": "100k",
+      "Void": "1M+"
     },
     "trend": "5/5"
   }
