@@ -5,7 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saber Simulator Value List – Updated Prices</title>
-  <meta name="description" content="Updated Saber Simulator Value List with current item prices, rarity, and trading values.">
+  <meta name="description" content="Saber Simulator Value List with updated trading prices, rarity, and secret pets. Includes Triple Moon, Double Moon, Noob Queen, Noob Pilot, Eclipse, Sun, and Secret pets for trading insights.">
+  <meta name="keywords" content="Saber Simulator value list, Triple Moon, Double Moon, Noob Queen, Noob Pilot, Eclipse, Sun, Secret, Secert, trading values, pet prices, Roblox Saber Simulator">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Saber Simulator Value List",
+    "description": "Updated Saber Simulator pet values including Triple Moon, Double Moon, Noob Queen, Noob Pilot, Eclipse, Sun, and Secret pets.",
+    "keywords": ["Triple Moon","Double Moon","Noob Queen","Noob Pilot","Eclipse","Sun","Secret","Secert"]
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.counter.dev/script.js" data-id="f574c2ff-102d-4163-9d5e-f0196a3891b8" data-utcoffset="-7"></script>
   <style>
@@ -234,22 +244,73 @@ main { padding-top: 70px; }
   cursor: pointer;
   animation: calcGradient 5s ease infinite;
 }
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 300% 300%;
+  transition: width .14s linear;
+  animation: hueShift 6s linear infinite, barGlow 1.6s linear infinite;
+  z-index: 4000;
+}
+@keyframes hueShift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+@keyframes barGlow {
+  0%,100% { box-shadow: 0 0 6px rgba(0,255,255,.4), 0 0 12px rgba(255,0,255,.25); }
+  50% { box-shadow: 0 0 12px rgba(0,255,255,.7), 0 0 24px rgba(255,0,255,.45); }
+}
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.grid .card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:16px}
+@media (max-width:1200px){.grid{grid-template-columns:repeat(2,minmax(220px,1fr))}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}}
+.grid .card img{max-width:100%;height:auto;display:block;margin:0 auto 8px}
+.grid{perspective:1000px}
+.card{opacity:0;transform:translateY(24px) scale(.98) rotateX(3deg);filter:blur(6px);transition:opacity .6s ease, transform .15s cubic-bezier(.2,.8,.2,1), box-shadow .3s ease, filter .6s ease}
+.card.in-view{opacity:1;transform:translateY(0) scale(1) rotateX(0);filter:blur(0)}
+.card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 10px 24px rgba(0,0,0,.55), 0 0 12px rgba(0,255,255,.25)}
+
+.card:hover{
+  transform: translateY(0) scale(1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
   </style>
 </head>
 <body>
+<div id="progressBar"></div>
+<div class="sr-only">Triple Moon, Double Moon, Noob Queen, Noob Pilot, Eclipse, Sun, Secret, Secret</div>
+
  <div id="welcomeOverlay">
   <div id="welcomeBox">
     <h3>NOTICE!!!</h3>
     <p>
-      coins are buffed! now buff pet xp levels pleasem ty hd games devs also will be adding new pet values soon
-      <a href="https://discord.com/invite/AmVxNeg" target="_blank" style="color:#0ff; text-decoration:underline;">
-        https://discord.com/invite/AmVxNeg
-      </a>, join gd games discord they goats 
+      VALUE LIST UPDATED!!! 
     </p>
     <button id="welcomeOk">Okay</button>
   </div>
 </div>
-
 
   <div class="main"></div>
   <header>
@@ -310,15 +371,36 @@ main { padding-top: 70px; }
     const welcomeOk = document.getElementById('welcomeOk');
     welcomeOk.addEventListener('click', () => { welcomeOverlay.style.display = 'none'; });
 
+    const progressBar = document.getElementById('progressBar');
+    function updateProgress() {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      progressBar.style.width = pct + '%';
+    }
+    document.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('load', updateProgress);
+    window.addEventListener('resize', updateProgress);
+
     let allData = [];
     function normalize(text) { return text.toLowerCase().replace(/\s+/g, ''); }
+
+    function getMaxCardsForThreeRows() {
+      const grid = document.getElementById('grid');
+      const minCardWidth = 220;
+      const columns = Math.max(1, Math.floor(grid.clientWidth / minCardWidth));
+      return columns * 3;
+    }
 
     function renderCards(data) {
       const grid = document.getElementById('grid');
       grid.innerHTML = '';
-      data.forEach(item => {
+      const maxCards = getMaxCardsForThreeRows();
+      const list = data.slice(0, maxCards);
+      list.forEach((item, i) => {
         const card = document.createElement('div');
         card.className = 'card';
+        card.style.transitionDelay = Math.min(i * 30, 70) + 'ms';
         const trendValue = parseFloat(item.trend);
         let trendStyle = '';
         if (!isNaN(trendValue)) {
@@ -341,8 +423,18 @@ main { padding-top: 70px; }
           <p style="${trendStyle}">Trend: ${item.trend}</p>
         `;
         grid.appendChild(card);
+        io.observe(card);
       });
     }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
 
     fetch('data.json')
       .then(res => res.json())
@@ -355,6 +447,12 @@ main { padding-top: 70px; }
         const filtered = allData.filter(item => normalize(item.name).includes(value));
         renderCards(filtered);
       }
+    });
+
+    window.addEventListener('resize', () => {
+      const value = normalize(document.getElementById('searchBar').value || '');
+      const data = value ? allData.filter(item => normalize(item.name).includes(value)) : allData;
+      renderCards(data);
     });
   </script>
 </body>
