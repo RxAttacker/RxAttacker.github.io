@@ -6,8 +6,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "120",
-      "Void": "1.1K"
+      "Rainbow": "60",
+      "Void": "800"
     },
     "trend": "1/5"
   },
@@ -18,8 +18,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "80",
-      "Void": "800"
+      "Rainbow": "40",
+      "Void": "550"
     },
     "trend": "1/5"
   },
@@ -64,12 +64,12 @@
     "image": "https://cdn.discordapp.com/attachments/1389238874907213828/1396984732507705447/image.png?ex=688012ea&is=687ec16a&hm=016db16e7a4307a77348cfced4c2d89e6bc055dbdaf7e52c05c172f96c9a5461&",
     "cost": {
       "Normal": "70",
-      "Golden": "700-1300",
-      "Shiny": "10K",
-      "Rainbow": "35k+",
+      "Golden": "700-1100",
+      "Shiny": "9k",
+      "Rainbow": "33k+",
       "Void": "400K?+"
     },
-    "trend": "3/5"
+    "trend": "1/5"
   },
        {
      "name": "Glimmerwing",
@@ -79,7 +79,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "5",
-      "Void": "25-40"
+      "Void": "10-25"
     },
     "trend": "0/5"
   },
@@ -90,8 +90,8 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "N/A",
-      "Rainbow": "50",
-      "Void": "500"
+      "Rainbow": "35",
+      "Void": "450"
     },
     "trend": "1/5"
   },
@@ -103,7 +103,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "N/A",
-      "Void": "20-50"
+      "Void": "15-30"
     },
     "trend": "1/5"
   },
@@ -113,9 +113,9 @@
     "cost": {
       "Normal": "N/A",
       "Golden": "N/A",
-      "Shiny": "30",
-      "Rainbow": "350",
-      "Void": "2.8k - 3.3k"
+      "Shiny": "N/A",
+      "Rainbow": "85",
+      "Void": "1.2k"
     },
     "trend": "3/5"
   },
@@ -127,7 +127,7 @@
       "Golden": "N/A",
       "Shiny": "N/A",
       "Rainbow": "N/A",
-      "Void": "75"
+      "Void": "40"
     },
     "trend": "2/5"
   },
@@ -138,20 +138,44 @@
       "Normal": "N/A",
       "Golden": "N/A",
       "Shiny": "n/A",
-      "Rainbow": "200",
-      "Void": "2K"
+      "Rainbow": "100",
+      "Void": "1.4K"
     },
-    "trend": "5/5"
+    "trend": "2/5"
   },
     {
      "name": "Eclipse",
     "image": "https://i.imgur.com/j5x4EQe.png",
     "cost": {
       "Normal": "450-500",
-      "Golden": "4.5k-5k",
-      "Shiny": "26-31k",
+      "Golden": "4k-4.5k",
+      "Shiny": "23-30k",
       "Rainbow": "100k",
       "Void": "1M+"
+    },
+    "trend": "5/5"
+  },
+      {
+     "name": "Noob Pilot",
+    "image": "hhttps://i.imgur.com/fZlYO2p.png",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "N/A",
+      "Rainbow": "5",
+      "Void": "50"
+    },
+    "trend": "3/5"
+  },
+      {
+     "name": "Noob Queen",
+    "image": "https://i.imgur.com/p0KoIIh.png",
+    "cost": {
+      "Normal": "N/A",
+      "Golden": "N/A",
+      "Shiny": "50",
+      "Rainbow": "500",
+      "Void": "4k-4.5k+"
     },
     "trend": "5/5"
   }
